@@ -148,8 +148,6 @@ def handle_client(client_socket, client_id):
                             client_socket.send("This is an illegal move. Please change your move!\n".encode())
                     except ValueError:
                         client_socket.send("Invalid move input. Please enter the location in the format A1.\n".encode())
-                elif data.startswith(f"{client_id} REQUEST"):
-                    send_game_state(client_id, other_client_id)
 
         else:
             send_game_state(client_id, other_client_id)

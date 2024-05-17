@@ -57,18 +57,5 @@ Example: python3 BattleshipClient.py 6000
 - The game does not handle client disconnections gracefully during gameplay.
 - There is limited error handling for invalid inputs during the game setup phase.
 
-## Future Improvements
-
-- Implement a more robust error handling system.
-- Add features such as more sophisticated ship placement options and better client disconnection handling.
-- Enhance the user interface with more detailed game state updates.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-
-
 
 

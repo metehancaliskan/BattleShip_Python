@@ -106,10 +106,8 @@ def main(port):
                 print(response)
                 if "illegal move" not in response.lower():
                     break
-        elif command == "REQUEST":
-            client_socket.send(f"{client_id} REQUEST\n".encode())
         else:
-            print("Invalid command. Use 'MOVE' to make a move or 'REQUEST' to get board state and turn information.")
+            print("Invalid command. Use 'MOVE' to make a move")
 
     client_socket.close()
 
